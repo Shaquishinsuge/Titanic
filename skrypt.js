@@ -21,3 +21,7 @@ for (var i = minFare; i<=maxFare; i++){
     opt.innerHTML = i;
     select.appendChild(opt);
 }}
+//check button
+document.getElementById("Check").onclick = function () {
+    location.href = "Check.html";
+};
