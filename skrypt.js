@@ -1,26 +1,14 @@
 //wiek
-var minAge = 0,
-    maxAge = 80,
-    select = document.getElementById('Age');
+function enforce_maxlength(event) {
+    var t = event.target;
+    if (t.hasAttribute('maxlength')) {
+      t.value = t.value.slice(0, t.getAttribute('maxlength'));
+    }
+  }
 
-for (var i = minAge; i<=maxAge; i++){
-    var opt = document.createElement('option');
-    opt.value = i;
-    opt.innerHTML = i;
-    select.appendChild(opt);
-}
+  document.body.addEventListener('input', enforce_maxlength);
 //pasengerFare
-var minFare = 10,
-    maxFare = 200,
-    select = document.getElementById('Fare');
 
-for (var i = minFare; i<=maxFare; i++){
-    if(i % 10 === 0){
-    var opt = document.createElement('option');
-    opt.value = i;
-    opt.innerHTML = i;
-    select.appendChild(opt);
-}}
 //check button
 document.getElementById("Check").onclick = function () {
     location.href = "Check.html";
