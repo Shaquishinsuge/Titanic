@@ -1,3 +1,25 @@
 body {
     font-family: 'Lato', sans-serif;
 }
+/* HIDE RADIO */
+#port { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* IMAGE STYLES */
+  #port + img {
+    cursor: pointer;
+  }
+  
+  /* CHECKED STYLES */
+  #port:checked + img {
+    outline: 3px solid red;
+  }
+
+  #rcorners2 {
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+  }

@@ -31,22 +31,22 @@
 </nav>
 <center>
 <!--intro-->
-<div class="container mt-5">
-<p>
+<div class="container mt-5" id="rcorners2" style="font-size: 30px;">
+
     
-<p><span class="font-weight-bold">Would You Have Survived The Titanic? With Machine Learning
+<p><span class="font-weight-bold p-5">Would You Have Survived The Titanic? With Machine Learning
 
 Introduction</span></p>
 
-<p>RMS Titanic sank in the early morning of 15 April 1912 in the North Atlantic Ocean, four days into the ship's maiden voyage from Southampton to New York City. 
+<p class="mt-5 p-5">RMS Titanic sank in the early morning of 15 April 1912 in the North Atlantic Ocean, four days into the ship's maiden voyage from Southampton to New York City. 
 The largest ocean liner in service at the time, Titanic had an estimated 2,224 people on board when she struck an iceberg at around 23:40 on Sunday,
 14 April 1912. Her sinking two hours and forty minutes later at 02:20 on Monday, 15 April, resulted in the deaths of more than 1,500 people,
 making it one of history's deadliest marine disasters during peacetime.</p>
 
-<p>This is your chance to learn what are your chances to survive Titanic crash.</p>
+<p class="mt-5">This is your chance to learn what are your chances to survive Titanic crash.</p>
 
-<p>Our Machine Learning algorithm will determine your chances of survival.</p>
-</p>
+<p class="mt-5">Our Machine Learning algorithm will determine your chances of survival.</p>
+
 </div>
 
 
@@ -79,6 +79,80 @@ making it one of history's deadliest marine disasters during peacetime.</p>
     <datalist id="Age">
     <!--skrypt-->
     </datalist>
+</div>
+
+<!--of siblings/spouses aboard the Titanic-->
+<div class="container mt-5">
+    <span style="font-size: 40px;"># of siblings / spouses aboard the Titanic</span>
+</div>
+
+<div>
+    <select class="mt-5">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    </select>
+</div>
+
+<!--# of parents / children aboard the Titanic-->
+<div class="container mt-5">
+    <span style="font-size: 40px;"># of parents / children aboard the Titanic</span>
+</div>
+
+<div>
+    <select class="mt-5">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    </select>
+</div>
+
+<!--Port of Embarkation-->
+<div class="mt-5">
+    <span style="font-size: 40px;">Port of embarkation</span>
+</div>
+
+<div class="row mt-5 ">
+    <div class="col">
+            <p class="font-weight-bold" style="font-size:25px;">Cherbourg</p>
+            <p>
+            <label>
+                <input type="radio" id="port" name="port" value="cherbourg" checked">
+                <img src="https://www.campingetangdeshaizes.com/uploads/images/Gallery/cherbourg/Cherbourg%20-%20gare%20maritime.jpg" style="width: 400px;">
+            </label>           
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </p>
+    </div>
+    <div class="col">
+            <p class="font-weight-bold" style="font-size:25px;">Queenstown</p>
+            <p>
+            <label>
+                <input type="radio" id="port" name="port" value=" Queenstown" checked>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Queenstown_from_Bob%27s_Peak.jpg" style="width: 400px;">
+            </label>
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            </p>
+    </div>
+    <div class="col">
+            <p class="font-weight-bold" style="font-size:25px;">Southampton</p>
+            <p>        
+            <label>
+                <input type="radio" id="port" name="port" value="Southampton" checked>
+                <img src="https://widgety-assets.s3.amazonaws.com/2016/06/06/13/21/31/281/Ocean_Cruise_Terminal_2.jpg" style="width: 400px; height: 266.66;">
+            </label>
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            </p>
+    </div>
 </div>
 
 <!--Passenger fare-->
